@@ -14,4 +14,8 @@ Written with most modern tech.
 * Drizzle ORM
 * SQLite
 
+## Live example
+[Dator_Butik Migawka.site](https://dator.migawka.site)
+
+## Database diagram
 ![Db diagram](diagram.png)
