@@ -63,10 +63,16 @@ export type Order = {
 	id: number;
 	address: Address;
 	user: User;
-	products: Product[];
 	summa: number;
 	currency: Currency;
-	info: string;
+	info: {
+		productId: number;
+		price: number;
+		amount: number;
+	}[];
+
+	createdAt: Date;
+	updatedAt: Date;
 }
 
 export type Comment = {
@@ -83,6 +89,14 @@ export type Category = {
 	id: number;
 	name: string;
 	slug: string;
+}
+
+export type Session = {
+	id: number;
+	createdAt: Date;
+	userId: number;
+	token: string;
+	experiesAt: Date;
 }
 
 export const currencies = ["USD", "EUR", "SEK", "UAH"] as const;
